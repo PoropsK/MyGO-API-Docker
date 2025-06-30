@@ -4,7 +4,7 @@ Danger!!! This module has READ FILE operation.
 
 import requests
 from fastapi.responses import JSONResponse
-from static import all_file
+from ..static import all_file
 
 url = 'https://drive.miyago9267.com/d/file/img/mygo/'
 

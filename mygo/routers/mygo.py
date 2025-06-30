@@ -1,7 +1,7 @@
 """Router for Basic Info"""
 import time
 from fastapi import APIRouter
-from services import get_pic_multikey, get_pic_list, get_random_pic
+from ..services import get_pic_multikey, get_pic_list, get_random_pic
 
 router = APIRouter()
 

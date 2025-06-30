@@ -1,9 +1,9 @@
-from static import all_file
+from ..static import all_file
 from pathlib import Path
 import json
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from algo.Levenshtein import distance as levenshtein_distance
+from ..algo.Levenshtein import distance as levenshtein_distance
 from opencc import OpenCC
 
 json_path = Path(__file__).parent.parent / 'static' / 'mygo.json'
