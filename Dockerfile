@@ -12,9 +12,9 @@ RUN pip install poetry
 COPY pyproject.toml poetry.lock ./
 
 # 安裝專案相依性，但不建立虛擬環境
-# --without dev: 不安裝開發用的套件
+# 因為沒有 dev-dependencies，所以直接安裝即可
 RUN poetry config virtualenvs.create false && \
-    poetry install --without dev
+    poetry install
 
 # ---- Final Stage ----
 # 使用相同的 Python 3.12 slim 映像檔作為最終環境
