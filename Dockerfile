@@ -8,6 +8,9 @@ WORKDIR /app
 # 安裝 poetry
 RUN pip install poetry
 
+# 安裝建置工具，用於編譯 C 擴充套件
+RUN apt-get update && apt-get install -y build-essential
+
 # 複製相依性定義檔
 COPY pyproject.toml poetry.lock ./
 
