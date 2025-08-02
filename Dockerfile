@@ -41,4 +41,4 @@ EXPOSE 3030
 
 # 啟動應用程式的指令
 # 使用 mygo.app:app 來指定 FastAPI 實例的位置
-CMD ["uvicorn", "mygo.app:app", "--host", "0.0.0.0", "--port", "3030"]
+CMD ["python", "-m", "uvicorn", "mygo.app:app", "--host", "0.0.0.0", "--port", "3030"]
